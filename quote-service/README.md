@@ -2,14 +2,13 @@
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+reference https://quarkus.io/ .
 
-## Running the application in dev mode
-
-You can run your application in dev mode that enables live coding using:
-```
+## Running the application in dev mode 
 ./mvnw quarkus:dev
-```
+
+###
+build native mvnw package -Pnative
 
 ## Packaging and running the application
 
@@ -28,3 +27,16 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/quote-service-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+
+
+
+###Detailed steps
+
+#### Create quarkus code using initialiser
+#### Install graalVM
+#### gu install native-image
+#### native image requires visual studio code x64 
+x64 Native Tools Command Prompt for VS 2019
+Otherwise you will see this issue 
+* Native-image building on Windows currently only supports target architecture: AMD64 (x86 unsupported)
+https://github.com/oracle/graal/issues/2116
