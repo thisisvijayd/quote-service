@@ -40,3 +40,4 @@ x64 Native Tools Command Prompt for VS 2019
 Otherwise you will see this issue 
 * Native-image building on Windows currently only supports target architecture: AMD64 (x86 unsupported)
 https://github.com/oracle/graal/issues/2116
+~visual code installation may override existing system variables on windows , causing issues to minishift/docker/powershell etc
